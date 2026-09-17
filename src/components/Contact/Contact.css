@@ -1,0 +1,25 @@
+.pTitle{margin:0 0 6px;font-size:34px}
+.pSub{margin:0 0 18px;color:var(--muted)}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.info,.cform{background:#fff;border:1px solid var(--border);border-radius:14px;box-shadow:0 10px 20px rgba(2,6,23,.05);padding:16px}
+.info p{margin:8px 0;color:#334155}
+
+.field{display:grid;gap:6px;margin-bottom:12px}
+input,textarea{border:1px solid var(--border);border-radius:12px;padding:12px;font:inherit}
+.btn{border:none;border-radius:12px;padding:12px 14px;background:var(--primary);color:#fff;font-weight:900;cursor:pointer}
+.btn:hover{background:var(--primary-dark)}
+.ok{background:#ecfdf5;border:1px solid #d1fae5;color:#166534;padding:10px 12px;border-radius:12px;font-weight:800;margin-bottom:12px}
+@media (max-width:980px){.cgrid{grid-template-columns:1fr}}
+
+.map{
+  margin-top:12px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  overflow:hidden;
+  height:260px;
+}
+.map iframe{
+  width:100%;
+  height:100%;
+  border:0;
+}

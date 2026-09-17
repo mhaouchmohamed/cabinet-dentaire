@@ -1,0 +1,93 @@
+.gate{
+  min-height: 65vh;
+  display:grid;
+  place-items:center;
+}
+
+.gateCard{
+  width: min(520px, 100%);
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:16px;
+  box-shadow: 0 14px 28px rgba(2,6,23,.08);
+  padding: 22px;
+  text-align:center;
+}
+
+.gateLogo{
+  width:56px;height:56px;border-radius:999px;
+  display:grid;place-items:center;
+  background:#eff6ff;border:1px solid #dbeafe;
+  margin: 0 auto 12px;
+  font-size:26px;
+}
+
+.gateTitle{margin:0 0 4px;font-size:30px}
+.gateSub{margin:0 0 16px;color:var(--muted);font-weight:700}
+
+.tabs{
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  margin-bottom: 14px;
+}
+.tab{
+  border:1px solid var(--border);
+  background:#fff;
+  padding:10px 12px;
+  border-radius:12px;
+  font-weight:900;
+  cursor:pointer;
+}
+.tab.on{
+  background:#eff6ff;
+  border-color:#dbeafe;
+  color:#1d4ed8;
+}
+
+.box{
+  text-align:left;
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:14px;
+}
+.txt{margin:0 0 12px;color:var(--muted);line-height:1.6;font-weight:700}
+
+.lbl{font-weight:900;display:block;margin-bottom:6px}
+.inp{
+  width:100%;
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:12px;
+  font:inherit;
+  margin-bottom: 10px;
+}
+.btnPrimary{
+  width:100%;
+  border:none;
+  border-radius:12px;
+  padding:12px 14px;
+  background:var(--primary);
+  color:#fff;
+  font-weight:900;
+  cursor:pointer;
+}
+.btnPrimary:hover{background:var(--primary-dark)}
+.hint{margin:10px 0 0;color:var(--muted);font-weight:700}
+
+.btnLight{
+  margin-top: 12px;
+  border:1px solid var(--border);
+  background:#fff;
+  border-radius:12px;
+  padding:10px 12px;
+  font-weight:900;
+  cursor:pointer;
+}
+.btnLight:hover{background:#f1f5f9}
+.err{
+  display:block;
+  margin: -6px 0 10px;
+  color:#dc2626;
+  font-weight:800;
+}

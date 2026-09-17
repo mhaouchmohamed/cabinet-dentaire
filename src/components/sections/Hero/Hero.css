@@ -1,0 +1,41 @@
+.hero{
+  padding:80px 20px;
+  text-align:center;
+  background:linear-gradient(135deg,#e0f2fe,#f8fafc);
+}
+
+.heroContent h1{
+  font-size:40px;
+  margin-bottom:10px;
+}
+
+.heroContent p{
+  color:#64748b;
+  margin-bottom:20px;
+}
+
+.heroBtns{
+  display:flex;
+  gap:10px;
+  justify-content:center;
+}
+
+.btnMain{
+  background:#2563eb;
+  color:white;
+  padding:12px 18px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:bold;
+}
+.btnMain:hover{
+  background-color: #0a2e79e6;
+  color: white;
+  
+}
+.btnLight{
+  border:1px solid #2563eb;
+  padding:12px 18px;
+  border-radius:10px;
+  text-decoration:none;
+}

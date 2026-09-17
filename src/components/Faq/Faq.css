@@ -1,0 +1,9 @@
+.faq{padding:46px 0 0}
+.faqBox{display:grid;gap:10px}
+.faqItem{
+  text-align:left;border:1px solid var(--border);background:#fff;border-radius:14px;
+  padding:14px 16px;cursor:pointer;box-shadow:0 10px 20px rgba(2,6,23,.04)
+}
+.faqQ{font-weight:900}
+.faqPlus{float:right;font-weight:900;font-size:20px;color:var(--primary)}
+.faqA{margin-top:10px;color:var(--muted);line-height:1.6}

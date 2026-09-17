@@ -1,0 +1,108 @@
+.rvTitle{margin:0 0 6px;font-size:34px}
+.rvSub{margin:0 0 18px;color:var(--muted)}
+
+.successBox{
+  background:#ecfdf5;border:1px solid #d1fae5;color:#166534;
+  padding:12px 14px;border-radius:12px;margin-bottom:16px;font-weight:800
+}
+
+/* ✅ Layout */
+.rvGrid{
+  display:grid;
+  grid-template-columns: 1.4fr .9fr;
+  gap:18px;
+  align-items:start
+}
+
+.rvForm,.rvSide{
+  background:#fff;border:1px solid var(--border);
+  border-radius:14px;
+  box-shadow:0 10px 22px rgba(2,6,23,.05)
+}
+.rvForm{padding:16px}
+.rvSide{padding:16px}
+
+/* ✅ Fields */
+.field{display:grid;gap:6px;margin-bottom:12px}
+.rvForm label{font-weight:800}
+
+.rvForm input,
+.rvForm select,
+.rvForm textarea{
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:12px;
+  font:inherit;
+  outline:none;
+  background:#fff
+}
+.rvForm input:focus,
+.rvForm select:focus,
+.rvForm textarea:focus{
+  border-color:#bfdbfe;
+  box-shadow:0 0 0 3px rgba(37,99,235,.12)
+}
+.err{color:#dc2626;font-weight:700}
+
+/* ✅ Two columns (date/time) */
+.two{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:12px
+}
+
+/* ✅ Submit */
+.submit{
+  width:100%;
+  border:none;
+  border-radius:12px;
+  padding:12px 14px;
+  background:var(--primary);
+  color:#fff;
+  font-weight:900;
+  cursor:pointer;
+  box-shadow:0 12px 20px rgba(37,99,235,.18);
+  transition:.2s
+}
+.submit:hover{background:var(--primary-dark);transform:translateY(-1px)}
+.submit:disabled{opacity:.7;cursor:not-allowed;transform:none}
+
+/* ✅ Side list */
+.muted{color:var(--muted)}
+.list{display:grid;gap:10px;margin-top:10px}
+.item{border:1px solid var(--border);border-radius:12px;padding:12px}
+.itemTop{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.meta{color:var(--muted);font-weight:700;font-size:13px;margin-top:4px}
+.msg{margin-top:8px;color:#334155}
+.del{
+  border:none;background:#f1f5f9;color:#0f172a;
+  font-weight:900;padding:8px 10px;border-radius:10px;cursor:pointer
+}
+.del:hover{background:#e2e8f0}
+
+/* ✅ WhatsApp button */
+.waBtn{
+  margin-top:10px;
+  display:inline-flex;
+  width:100%;
+  justify-content:center;
+  text-decoration:none;
+  background:#22c55e;
+  color:#fff;
+  font-weight:900;
+  padding:12px 14px;
+  border-radius:12px;
+}
+.waBtn:hover{filter:brightness(.95)}
+
+/* ✅ Responsive */
+@media (max-width: 980px){
+  .rvGrid{grid-template-columns:1fr}
+}
+
+@media (max-width: 520px){
+  .two{grid-template-columns:1fr}
+  .rvTitle{font-size:28px}
+  .rvForm,.rvSide{padding:14px}
+  .submit,.waBtn{padding:12px}
+}
